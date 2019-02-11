@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<script type="text/javascript">
+function $(element){
+	if(element.indexOf('.') > -1){
+		return document.getElementsByClassName(element);
+	}else{
+		return document.getElementById(element);
+	}
+}
+function show(element){
+	$(element).style.display="block";
+}
+function hide(element){
+	$(element).style.display="none";
+}
+</script>
+<style type="text/css">
+a { color:#666; text-decoration:none; }
+ul,ol { list-style:none; }
+#debug { width:800px; margin:0 auto; }
+#debug .menu { background:#CCC; border-bottom:#CCC 2px solid; }
+#debug .menu ul li { float:left; padding:10px 25px; }
+#debug .menu ul li.current { background:#FFF; }
+table { border-collapse:collapse; width:100%; display:none; }
+table tr td { border:#333 1px solid; padding:5px 15px; text-align:left; }
+</style>
+<div id="debug">
+	<div class="menu">
+    	<ul>
+        	<li onclick="hide('.box');show('post');" class="current"><a href="javascript:;">POST</a></li>
+        	<li onclick="hide('.box');show('get');"><a href="javascript:;">GET</a></li>
+        	<li onclick="hide('.box');show('cookie');"><a href="javascript:;">COOKIE</a></li>
+        	<li onclick="hide('.box');show('session');"><a href="javascript:;">SESSION</a></li>
+        	<li onclick="hide('.box');show('sql');"><a href="javascript:;">SQL</a></li>
+        	<li onclick="hide('.box');show('file');"><a href="javascript:;">FILE</a></li>
+        </ul>
+        <div style="clear:both;"></div>
+    </div>
+    <div id="post">
+  		<table style="display:block;">
+        	<thead>
+        		<tr>
+                	<td>编号</td>
+                	<td>标题</td>
+                </tr>
+            </thead>
+            <tbody>
+        		<tr>
+                	<td width="10%">1</td>
+                	<td width="90%">test</td>
+                </tr>
+            </tbody>
+        </table>  
+    </div>
+    <div id="get">
+  		<table>
+        	<thead>
+        		<tr>
+                	<td>编号</td>
+                	<td>标题</td>
+                </tr>
+            </thead>
+            <tbody>
+        		<tr>
+                	<td width="10%">1</td>
+                	<td width="90%">test</td>
+                </tr>
+            </tbody>
+        </table>  
+    </div>
+    <div id="cookie">
+  		<table>
+        	<thead>
+        		<tr>
+                	<td>编号</td>
+                	<td>标题</td>
+                </tr>
+            </thead>
+            <tbody>
+        		<tr>
+                	<td width="10%">1</td>
+                	<td width="90%">test</td>
+                </tr>
+            </tbody>
+        </table>  
+    </div>
+    <div id="session">
+  		<table>
+        	<thead>
+        		<tr>
+                	<td>编号</td>
+                	<td>标题</td>
+                </tr>
+            </thead>
+            <tbody>
+        		<tr>
+                	<td width="10%">1</td>
+                	<td width="90%">test</td>
+                </tr>
+            </tbody>
+        </table>  
+    </div>
+    <div id="sql">
+  		<table>
+        	<thead>
+        		<tr>
+                	<td>编号</td>
+                	<td>标题</td>
+                	<td>时间</td>
+                </tr>
+            </thead>
+            <tbody>
+        		<tr>
+                	<td width="10%">1</td>
+                	<td width="75%">select 8 from</td>
+                	<td width="15%">0.02</td>
+                </tr>
+            </tbody>
+        </table>  
+    </div>
+    <div id="file">
+  		<table>
+        	<thead>
+        		<tr>
+                	<td>编号</td>
+                	<td>标题</td>
+                	<td>时间</td>
+                </tr>
+            </thead>
+            <tbody>
+        		<tr>
+                	<td width="10%">1</td>
+                	<td width="75%">/fitel.php</td>
+                	<td width="15%">0.02</td>
+                </tr>
+            </tbody>
+        </table>  
+    </div>
+</div>
+</body>
+</html>
